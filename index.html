@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proyecto de Gestión del Conocimiento: módulo de monitoreo de contaminación acústica para Ciudad Inteligente.">
+  <meta name="description" content="NeoGrid: módulo de monitoreo de contaminación acústica para Ciudad Inteligente.">
   <meta name="theme-color" content="#101827">
-  <title>Contaminación acústica | Ciudad Inteligente</title>
+  <title>Comprender el ruido urbano</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
       <div class="hero-grid"></div>
       <div class="hero-content">
         <div class="eyebrow"><span class="pulse"></span> PROYECTO DE GESTIÓN DEL CONOCIMIENTO · PGC</div>
-        <h1>.<br><em>Comprender el ruido.</em></h1>
+        <h1><em>Comprender el ruido.</em></h1>
         <p class="hero-copy">Un módulo de monitoreo acústico que transforma mediciones de sonido en información para reconocer patrones por zona, horario y nivel de ruido.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#dashboard">Ver análisis <span>→</span></a>
@@ -47,7 +47,9 @@
         </div>
       </div>
       <div class="hero-visual" aria-label="Ilustración de monitoreo acústico">
-        <div class="sound-ring ring-one"></div><div class="sound-ring ring-two"></div><div class="sound-ring ring-three"></div>
+        <div class="sound-ring ring-one"></div>
+        <div class="sound-ring ring-two"></div>
+        <div class="sound-ring ring-three"></div>
         <div class="city-card">
           <div class="city-top"><span>MONITOREO ACÚSTICO</span><span class="live-dot">● SIMULACIÓN</span></div>
           <div class="city-scene">
@@ -57,7 +59,10 @@
             <div class="road"><span></span><span></span><span></span></div>
             <div class="sensor-pin"><span>⌁</span></div>
           </div>
-          <div class="city-reading"><div><small>NIVEL ESTIMADO</small><strong> dB <small>variable</small></strong></div><div class="traffic"><i></i><i></i><i></i></div></div>
+          <div class="city-reading">
+            <div><small>NIVEL ESTIMADO</small><strong> dB <small>variable</small></strong></div>
+            <div class="traffic"><i></i><i></i><i></i></div>
+          </div>
           <div class="city-foot"><span>ESP32 · SENSOR DE SONIDO</span><span>VERDE / AMARILLO / ROJO</span></div>
         </div>
         <div class="floating-chip chip-a"><span class="chip-icon">◷</span><span><b>Análisis temporal</b><small>Hora y jornada</small></span></div>
@@ -82,15 +87,26 @@
         <article><span>TIPO DE PROYECTO</span><b>Proyecto de Gestión del Conocimiento</b><small>Módulo de Ciudad Inteligente</small></article>
       </div>
       <div class="problem-grid">
-        <article class="problem-card"><div class="mini-label">PROBLEMA</div><h3>¿Cómo reconocer los patrones del ruido urbano?</h3><p>Sin un registro organizado de las mediciones, resulta difícil comparar zonas y horarios, identificar concentraciones de niveles elevados y comunicar evidencia que apoye decisiones de monitoreo.</p></article>
-        <article class="problem-card problem-accent"><div class="mini-label">JUSTIFICACIÓN</div><h3>Medir para comprender y actuar.</h3><p>El módulo permite demostrar cómo los dispositivos de captura, el almacenamiento y el análisis de datos pueden apoyar la observación de un fenómeno urbano. La solución tiene fines académicos y de simulación.</p></article>
+        <article class="problem-card">
+          <div class="mini-label">PROBLEMA</div>
+          <h3>¿Cómo reconocer los patrones del ruido urbano?</h3>
+          <p>Sin un registro organizado de las mediciones, resulta difícil comparar zonas y horarios, identificar concentraciones de niveles elevados y comunicar evidencia que apoye decisiones de monitoreo.</p>
+        </article>
+        <article class="problem-card problem-accent">
+          <div class="mini-label">JUSTIFICACIÓN</div>
+          <h3>Medir para comprender y actuar.</h3>
+          <p>El módulo permite demostrar cómo los dispositivos de captura, el almacenamiento y el análisis de datos pueden apoyar la observación de un fenómeno urbano. La solución tiene fines académicos y de simulación.</p>
+        </article>
       </div>
     </section>
 
     <section class="section objectives-section">
       <div class="section-kicker">02 / PROPÓSITO</div>
       <div class="section-heading"><h2>Objetivos del proyecto</h2><p>Una ruta desde la captura de información hasta la generación de conocimiento.</p></div>
-      <div class="objective-main"><span>OBJETIVO GENERAL</span><p>Desarrollar un módulo demostrativo de monitoreo de contaminación acústica para Ciudad Inteligente que permita estimar y clasificar niveles de ruido en diferentes zonas, almacenar las mediciones y analizarlas mediante un modelo multidimensional y herramientas de visualización.</p></div>
+      <div class="objective-main">
+        <span>OBJETIVO GENERAL</span>
+        <p>Desarrollar un módulo demostrativo de monitoreo de contaminación acústica para Ciudad Inteligente que permita estimar y clasificar niveles de ruido en diferentes zonas, almacenar las mediciones y analizarlas mediante un modelo multidimensional y herramientas de visualización.</p>
+      </div>
       <div class="objective-list">
         <div><b>01</b><p>Implementar un sistema físico con ESP32 y sensor de sonido para obtener lecturas y representar su clasificación mediante un semáforo.</p></div>
         <div><b>02</b><p>Diseñar una base de datos relacional que organice zonas, sensores, estados, límites y mediciones.</p></div>
@@ -118,6 +134,19 @@
         <article class="zone-card"><div class="zone-illustration commercial">▦</div><div><span class="zone-tag">ZONA 02</span><h4>Comercial</h4><p>Entorno asociado a actividades comerciales.</p></div></article>
         <article class="zone-card"><div class="zone-illustration hospital">✚</div><div><span class="zone-tag">ZONA 03</span><h4>Hospitalaria</h4><p>Entorno que requiere especial atención al ruido.</p></div></article>
       </div>
+
+      <div class="prototype-gallery">
+        <div class="prototype-heading">
+          <span class="section-kicker">PROTOTIPO FÍSICO</span>
+          <h3>Así se materializa.</h3>
+          <p>Maqueta demostrativa del módulo de monitoreo de contaminación acústica, que integra el sensor de sonido, el ESP32, el semáforo y los elementos del entorno urbano.</p>
+        </div>
+        <figure class="prototype-image">
+          <img src="assets/Maqueta.jpeg" alt="Maqueta física del proyecto NeoGrid para el monitoreo de contaminación acústica" loading="lazy">
+          <figcaption>Prototipo físico – Módulo de contaminación acústica.</figcaption>
+        </figure>
+      </div>
+
       <div class="note"><b>Nota técnica:</b> las lecturas del módulo físico son estimaciones del montaje académico. La simulación de un millón de registros utilizada en la base de datos es un conjunto de datos generado para pruebas y análisis; no representa mediciones reales de la ciudad ni certifica cumplimiento normativo.</div>
     </section>
 
@@ -150,7 +179,12 @@
           <p>Base de datos <code>CiudadInteligente_Acustica</code>. Organiza las entidades y sus relaciones para almacenar las mediciones.</p>
           <div class="table-stack">
             <div class="db-table main-table"><b>Medicion</b><span>IdMedicion · FechaHora · NivelRuidoDb</span><span>IdSensor · IdEstado · límites</span></div>
-            <div class="db-branches"><div class="db-table"><b>Zona</b><span>Nombre · Tipo</span></div><div class="db-table"><b>Sensor</b><span>Ubicación · Zona</span></div><div class="db-table"><b>EstadoSemaforo</b><span>Color · Descripción</span></div><div class="db-table"><b>LimiteRuido</b><span>Zona · Jornada · umbrales</span></div></div>
+            <div class="db-branches">
+              <div class="db-table"><b>Zona</b><span>Nombre · Tipo</span></div>
+              <div class="db-table"><b>Sensor</b><span>Ubicación · Zona</span></div>
+              <div class="db-table"><b>EstadoSemaforo</b><span>Color · Descripción</span></div>
+              <div class="db-table"><b>LimiteRuido</b><span>Zona · Jornada · umbrales</span></div>
+            </div>
           </div>
           <small class="model-foot">Vista de extracción: <code>dbo.vw_ETL_Mediciones</code></small>
         </article>
@@ -159,79 +193,138 @@
           <h3>Modelo multidimensional</h3>
           <p>Data Warehouse <code>CiudadInteligente_Acustica_DW</code>. Una fila de hechos representa una medición individual.</p>
           <div class="star-schema">
-            <div class="dim dim-top">DimFecha</div><div class="dim dim-left">DimZona</div><div class="fact"><b>FactMedicion</b><span>NivelRuidoDb</span><span>LimiteModeradoDb</span><span>LimiteAltoDb</span><span>CantidadMediciones</span></div><div class="dim dim-right">DimSensor</div><div class="dim dim-bottom-left">DimHora</div><div class="dim dim-bottom-right">DimEstado</div>
+            <div class="dim dim-top">DimFecha</div>
+            <div class="dim dim-left">DimZona</div>
+            <div class="fact"><b>FactMedicion</b><span>NivelRuidoDb</span><span>LimiteModeradoDb</span><span>LimiteAltoDb</span><span>CantidadMediciones</span></div>
+            <div class="dim dim-right">DimSensor</div>
+            <div class="dim dim-bottom-left">DimHora</div>
+            <div class="dim dim-bottom-right">DimEstado</div>
           </div>
           <small class="model-foot">5 dimensiones: Zona · Sensor · Estado · Fecha · Hora</small>
         </article>
       </div>
       <div class="etl-panel">
         <div><span class="section-kicker">PROCESO ETL · SSIS</span><h3>Extraer → Transformar → Cargar</h3><p>El paquete <code>ETL_CiudadInteligente_Acustica</code> consulta la vista de origen, prepara los atributos temporales, obtiene claves sustitutas mediante Lookup y carga la tabla de hechos.</p></div>
-        <div class="etl-steps"><div><b>01</b><span>Origen relacional</span><small>vw_ETL_Mediciones</small></div><i>→</i><div><b>02</b><span>Transformaciones</span><small>Conversión · Lookup · validación</small></div><i>→</i><div><b>03</b><span>Destino DW</span><small>Dimensiones + FactMedicion</small></div></div>
+        <div class="etl-steps">
+          <div><b>01</b><span>Origen relacional</span><small>vw_ETL_Mediciones</small></div><i>→</i>
+          <div><b>02</b><span>Transformaciones</span><small>Conversión · Lookup · validación</small></div><i>→</i>
+          <div><b>03</b><span>Destino DW</span><small>Dimensiones + FactMedicion</small></div>
+        </div>
       </div>
-      <div class="quality-row"><div><b>Reglas de simulación reportadas</b><p>Jornada diurna: 06:00 a antes de 21:00. Jornada nocturna: demás horas. Distribución objetivo aproximada: 70 % normal, 22 % moderado y 8 % alto.</p></div><div><b>Validaciones reportadas</b><p>Conteo de origen y destino, registros rechazados, correspondencia dimensional y repetición de la carga. Se reportaron tres ejecuciones exitosas de un millón de filas.</p></div></div>
-      <div class="note">Los umbrales y porcentajes descritos son parámetros de simulación académica. Antes de publicar la versión definitiva, contrasta estos valores y los nombres de columnas con la implementación final de SQL Server y SSIS.</div>
+      <div class="quality-row">
+        <div><b>Reglas de simulación reportadas</b><p>Jornada diurna: 06:00 a antes de 21:00. Jornada nocturna: demás horas. Distribución objetivo aproximada: 70 % normal, 22 % moderado y 8 % alto.</p></div>
+        <div><b>Validaciones reportadas</b><p>Conteo de origen y destino, registros rechazados, correspondencia dimensional y repetición de la carga. Se reportaron tres ejecuciones exitosas de un millón de filas.</p></div>
+      </div>
+      
     </section>
 
     <section class="section dashboard-section" id="dashboard">
       <div class="section-kicker">06 / EXPLORACIÓN ANALÍTICA</div>
-      <div class="dashboard-heading"><div><h2>Los datos, en perspectiva.</h2><p>Explora los indicadores y las comparaciones del módulo de contaminación acústica.</p></div><span class="coming-label">INTEGRACIÓN POWER BI</span></div>
+      <div class="dashboard-heading">
+        <div>
+          <h2>Los datos, en perspectiva.</h2>
+          <p>Explora los indicadores y las comparaciones del módulo de contaminación acústica mediante el informe interactivo desarrollado en Microsoft Power BI.</p>
+        </div>
+        <span class="coming-label">POWER BI INTEGRADO</span>
+      </div>
       <div class="dashboard-frame" id="dashboardFrame">
         <div class="dashboard-placeholder" id="dashboardPlaceholder">
           <div class="placeholder-icon">▥</div>
-          <span>ESPACIO PARA EL INFORME INTERACTIVO</span>
-          <h3>El dashboard de Power BI aparecerá aquí</h3>
-          <p>Publica el informe en Power BI y pega la URL de inserción en <code>script.js</code>. Así los visitantes podrán interactuar con los filtros directamente desde este sitio.</p>
-          <a href="https://learn.microsoft.com/es-es/power-bi/collaborate-share/service-embed-secure" target="_blank" rel="noopener">Consultar guía de inserción de Power BI ↗</a>
+          <span>DASHBOARD DE POWER BI</span>
+          <h3>Cargando informe interactivo...</h3>
+          <p>El informe permite consultar indicadores, comparar las zonas y explorar los datos mediante filtros de fecha, zona, jornada y sensor.</p>
         </div>
       </div>
+      <div class="dashboard-note"><span>↗</span> Utiliza los filtros del informe para cambiar la zona, la jornada y el sensor. Los indicadores se actualizan según la selección realizada.</div>
       <div class="analysis-requirements">
-        <div><b>5</b><span>Indicadores generales</span><small>Conteo · promedio · máximo · porcentajes por estado</small></div>
-        <div><b>3</b><span>Análisis univariados</span><small>Estado · nivel de ruido · hora</small></div>
-        <div><b>3</b><span>Análisis bivariados</span><small>Zona · jornada · hora</small></div>
-        <div><b>1</b><span>Análisis multivariado</span><small>Zona + jornada + hora + nivel de ruido</small></div>
+        <div><b>5</b><span>Indicadores generales</span><small>Mediciones · sensores · promedio · registros altos · porcentaje</small></div>
+        <div><b>3</b><span>Análisis univariados</span><small>Estado · intervalos de ruido · hora</small></div>
+        <div><b>3</b><span>Análisis bivariados</span><small>Zona · jornada · sensor</small></div>
+        <div><b>1</b><span>Análisis multivariado</span><small>Zona + jornada + mes</small></div>
       </div>
-      <div class="question-block"><span>PREGUNTAS QUE ORIENTAN EL ANÁLISIS</span><p>¿Qué zona presenta el mayor promedio de ruido? ¿En qué jornada se concentra la mayor proporción de mediciones altas? ¿Cómo cambia el nivel de ruido según zona, jornada y hora?</p></div>
+      <div class="question-block">
+        <span>PREGUNTAS QUE ORIENTAN EL ANÁLISIS</span>
+        <p>¿Qué zona presenta el mayor promedio de ruido? ¿Cómo cambia el nivel acústico según la hora? ¿Qué proporción de mediciones supera el límite alto? ¿Cómo se distribuyen los estados del semáforo?</p>
+      </div>
     </section>
 
     <section class="section knowledge-section" id="conocimientos">
-      <div class="section-kicker">07 / CONOCIMIENTOS EVIDENTES</div>
-      <div class="section-heading"><h2>De los gráficos a los hallazgos</h2><p>Los cinco conocimientos deben completarse con los resultados reales del dashboard. No se incluyen conclusiones numéricas anticipadas.</p></div>
+      <div class="section-kicker">07 / CONOCIMIENTOS EVIDENCIADOS</div>
+      <div class="section-heading"><h2>De los gráficos a los hallazgos</h2><p>Interpretación de los patrones observados en las dos páginas del informe de Power BI. Los resultados corresponden al conjunto simulado y pueden cambiar al modificar los filtros.</p></div>
       <div class="knowledge-grid">
-        <article class="knowledge-card"><span>CONOCIMIENTO 01</span><h3>Ruido promedio por zona</h3><p>Comparar el promedio, el máximo y el número de mediciones de las zonas residencial, comercial y hospitalaria.</p><div class="knowledge-status">Pendiente de resultado Power BI</div></article>
-        <article class="knowledge-card"><span>CONOCIMIENTO 02</span><h3>Estados por jornada</h3><p>Identificar cómo se distribuyen las categorías verde, amarilla y roja entre las jornadas diurna y nocturna.</p><div class="knowledge-status">Pendiente de resultado Power BI</div></article>
-        <article class="knowledge-card"><span>CONOCIMIENTO 03</span><h3>Comportamiento por hora</h3><p>Examinar la frecuencia y el nivel de ruido a lo largo de las 24 horas del día.</p><div class="knowledge-status">Pendiente de resultado Power BI</div></article>
-        <article class="knowledge-card"><span>CONOCIMIENTO 04</span><h3>Diferencias entre zonas y jornadas</h3><p>Comparar los niveles de ruido por tipo de zona y jornada, teniendo en cuenta el volumen de registros.</p><div class="knowledge-status">Pendiente de resultado Power BI</div></article>
-        <article class="knowledge-card knowledge-wide"><span>CONOCIMIENTO 05 · MULTIVARIADO</span><h3>Zona, jornada y hora en conjunto</h3><p>Calcular directamente sobre los registros la combinación de zona, jornada y hora para encontrar concentraciones de niveles elevados. El resultado debe provenir de una visualización que cruce simultáneamente las variables, no de tres gráficos independientes.</p><div class="knowledge-status">Pendiente de resultado Power BI</div></article>
+        <article class="knowledge-card">
+          <span>CONOCIMIENTO 01 · DISTRIBUCIÓN</span>
+          <h3>Predominio de niveles inferiores a 50 dB</h3>
+          <p>La distribución por intervalos de 5 dB concentra la mayor frecuencia en los rangos de 30 a 50 dB. A medida que aumenta el nivel de ruido, disminuye la cantidad de registros, especialmente en los intervalos superiores a 80 dB.</p>
+          <div class="knowledge-status knowledge-confirmed">Hallazgo observado en Power BI</div>
+        </article>
+        <article class="knowledge-card">
+          <span>CONOCIMIENTO 02 · ESTADOS</span>
+          <h3>Mayor frecuencia del estado verde</h3>
+          <p>El estado verde reúne la mayor cantidad de mediciones, seguido por el amarillo y, finalmente, el rojo. Esto refleja el predominio de registros clasificados en el rango normal dentro de los parámetros definidos para la simulación.</p>
+          <div class="knowledge-status knowledge-confirmed">Hallazgo observado en Power BI</div>
+        </article>
+        <article class="knowledge-card">
+          <span>CONOCIMIENTO 03 · COMPORTAMIENTO HORARIO</span>
+          <h3>El promedio aumenta durante el día</h3>
+          <p>El promedio por hora se mantiene alrededor de 44,5 dB durante la madrugada, aumenta desde las 06:00 hasta valores cercanos a 51 dB y desciende nuevamente alrededor de las 21:00. La frecuencia de registros por hora es relativamente uniforme.</p>
+          <div class="knowledge-status knowledge-confirmed">Hallazgo observado en Power BI</div>
+        </article>
+        <article class="knowledge-card">
+          <span>CONOCIMIENTO 04 · COMPARACIÓN POR ZONA</span>
+          <h3>La zona comercial presenta el promedio más alto</h3>
+          <p>La comparación por sensores muestra un promedio aproximado de 54 dB en la zona comercial, 47 dB en la residencial y 44 dB en la hospitalaria. Los porcentajes sobre el límite alto por zona se observan cercanos al 8 %, aunque deben revisarse con los filtros activos.</p>
+          <div class="knowledge-status knowledge-confirmed">Hallazgo observado en Power BI</div>
+        </article>
+        <article class="knowledge-card knowledge-wide">
+          <span>CONOCIMIENTO 05 · COMPARACIÓN TEMPORAL Y FILTROS</span>
+          <h3>La proporción de mediciones altas cambia según el periodo seleccionado</h3>
+          <p>En la vista filtrada para zona comercial, jornada diurna y Sensor Comercial 01, entre el 2 de febrero y el 10 de noviembre de 2026, se registraron 187.442 mediciones, con un promedio de 56,41 dB. De ellas, 15.011 superaron el límite alto, equivalentes al 8,01 %. El porcentaje mensual mostrado osciló entre 7,76 % y 8,61 %, con el valor más alto en noviembre, mes con cobertura parcial.</p>
+          <div class="knowledge-status knowledge-confirmed">Resultado de una selección específica de filtros</div>
+        </article>
       </div>
-      <div class="knowledge-method"><b>Ficha obligatoria para cada conocimiento</b><span>Pregunta</span><i>→</i><span>Variables</span><i>→</i><span>Procedimiento</span><i>→</i><span>Resultado y gráfico</span><i>→</i><span>Hallazgo</span><i>→</i><span>Interpretación</span><i>→</i><span>Utilidad</span><i>→</i><span>Limitación</span></div>
+      <div class="knowledge-method"><b>Lectura de cada conocimiento</b><span>Pregunta</span><i>→</i><span>Variables</span><i>→</i><span>Visualización</span><i>→</i><span>Resultado</span><i>→</i><span>Interpretación</span><i>→</i><span>Limitación</span></div>
+      <div class="analysis-caveat"><b>Alcance de la interpretación:</b> los valores aproximados de las comparaciones generales se leen de las gráficas. Los indicadores de la primera página corresponden únicamente a los filtros visibles en esa captura. Al cambiar zona, jornada, sensor o fecha, los resultados pueden variar.</div>
     </section>
 
     <section class="section decisions-section" id="decisiones">
       <div class="section-kicker">08 / VALIDACIÓN Y TOMA DE DECISIONES</div>
-      <div class="section-heading"><h2>Conocimiento que orienta acciones</h2><p>Las decisiones finales deben quedar vinculadas a valores verificables del dashboard y al escenario simulado.</p></div>
+      <div class="section-heading"><h2>Conocimiento que orienta acciones</h2><p>Las propuestas se derivan de los patrones observados en el conjunto simulado y no constituyen intervenciones sobre una ciudad real.</p></div>
       <div class="decision-grid">
-        <article><div class="decision-index">DECISIÓN 01</div><div class="decision-icon">⌖</div><h3>Priorizar una zona para seguimiento</h3><p>Una vez identificado el sector con mayor promedio o proporción de alertas, proponer un seguimiento focalizado en esa zona.</p><div class="decision-detail"><b>Indicador de seguimiento</b><span>Porcentaje de mediciones en estado rojo por zona.</span></div><small>Completar con zona, valores, evidencia y limitaciones verificadas.</small></article>
-        <article><div class="decision-index">DECISIÓN 02</div><div class="decision-icon">◷</div><h3>Enfocar la observación en franjas horarias</h3><p>Identificar las horas con mayor concentración de niveles elevados y orientar allí la revisión del comportamiento simulado.</p><div class="decision-detail"><b>Indicador de seguimiento</b><span>Promedio de dB y porcentaje de estado rojo por hora.</span></div><small>Completar con jornada, valores, evidencia y limitaciones verificadas.</small></article>
+        <article>
+          <div class="decision-index">DECISIÓN 01</div>
+          <div class="decision-icon">⌖</div>
+          <h3>Priorizar la observación de la zona comercial</h3>
+          <p>La zona comercial presenta el mayor promedio de ruido entre los sensores comparados. En el ejemplo filtrado, el 8,01 % de las mediciones superó el límite alto. Se propone revisar con mayor detalle sus periodos y registros de alerta.</p>
+          <div class="decision-detail"><b>Indicadores de seguimiento</b><span>Promedio de dB y porcentaje sobre el límite alto por zona.</span></div>
+        </article>
+        <article>
+          <div class="decision-index">DECISIÓN 02</div>
+          <div class="decision-icon">◷</div>
+          <h3>Observar las franjas horarias diurnas</h3>
+          <p>El promedio por hora aumenta desde las 06:00 y se mantiene alrededor de 51 dB durante buena parte del día. Se propone comparar esas horas entre zonas y jornadas para identificar cuándo se presentan mayores niveles.</p>
+          <div class="decision-detail"><b>Indicadores de seguimiento</b><span>Promedio de dB y frecuencia de estados amarillo y rojo por hora.</span></div>
+        </article>
       </div>
-      <div class="validation-strip"><b>Validación antes de concluir</b><span>Revisar tamaño de los grupos</span><span>·</span><span>Valores faltantes y atípicos</span><span>·</span><span>Denominadores de porcentajes</span><span>·</span><span>Asociación no implica causalidad</span></div>
-    </section>
-
-    <section class="section results-section">
-      <div class="section-kicker">09 / PRODUCTOS Y RESULTADOS</div>
-      <div class="section-heading"><h2>Lo construido y lo que falta evidenciar</h2><p>El PGC documenta el proceso de ingeniería y diferencia los productos desarrollados de los resultados analíticos que se completarán con Power BI.</p></div>
-      <div class="result-list">
-        <div><span class="result-check">✓</span><b>Maqueta y módulo de monitoreo acústico</b><small>Documentar con fotografías y evidencia de funcionamiento.</small><em>Producto físico</em></div>
-        <div><span class="result-check">✓</span><b>Modelo relacional y simulación de mediciones</b><small>Informe de Actividad 8: un millón de registros reportados.</small><em>Datos preparados</em></div>
-        <div><span class="result-check">✓</span><b>Data Warehouse y proceso ETL en SSIS</b><small>Esquema estrella y carga completa reportada.</small><em>Integración de datos</em></div>
-        <div><span class="result-pending">○</span><b>Dashboard, cinco conocimientos y dos decisiones</b><small>Completar con evidencia verificable de Power BI.</small><em class="pending">En desarrollo</em></div>
-        <div><span class="result-pending">○</span><b>Publicación, informe técnico y video</b><small>Agregar URL pública, capturas y enlace o evidencia del video.</small><em class="pending">Por completar</em></div>
-      </div>
+      
     </section>
 
     <section class="section conclusions-section">
       <div class="section-kicker">10 / CONCLUSIONES Y REFERENCIAS</div>
-      <div class="conclusion-layout"><h2>Una ciudad más comprensible<br>comienza con datos.</h2><div><p>El desarrollo integra un módulo físico de monitoreo con una arquitectura de datos que permite almacenar, preparar y analizar mediciones acústicas. El modelo relacional, el Data Warehouse y el ETL constituyen la base para explorar el comportamiento del escenario simulado.</p><p>La interpretación definitiva dependerá de los resultados obtenidos en Power BI. Las conclusiones deberán reconocer el carácter académico de la simulación, las limitaciones del sensor y la necesidad de calibración para realizar mediciones acústicas confiables en un entorno real.</p></div></div>
-      <div class="references-box"><b>Referencias y documentación técnica</b><p>[Agregar fuentes bibliográficas sobre contaminación acústica, medición de sonido, CRISP-DM, SQL Server, SSIS y Power BI efectivamente consultadas por el equipo.]</p><p>[Agregar manuales, fichas técnicas y fuentes de los componentes utilizados en la maqueta.]</p></div>
+      <div class="conclusion-layout">
+        <h2>Una ciudad más comprensible<br>comienza con datos.</h2>
+        <div>
+          <p>El desarrollo integra un módulo físico de monitoreo acústico con una arquitectura de datos que permite almacenar, preparar y analizar mediciones. La conexión entre el prototipo, la base relacional, el Data Warehouse, el proceso ETL y Power BI demuestra el recorrido de los datos desde su captura o generación hasta su interpretación.</p>
+          <p>En el análisis exploratorio, la mayor frecuencia se concentra en intervalos inferiores a 50 dB y predomina el estado verde del semáforo. También se observan diferencias entre zonas: el sensor comercial presenta el promedio más alto, seguido del residencial y el hospitalario. Por hora, el promedio aumenta durante el día y disminuye en la noche, mientras que la frecuencia de mediciones se mantiene relativamente uniforme.</p>
+          <p>En la consulta filtrada de la zona comercial, jornada diurna y Sensor Comercial 01, se obtuvo un promedio de 56,41 dB y un 8,01 % de mediciones sobre el límite alto. Este resultado es específico de los filtros seleccionados y no debe interpretarse como el promedio general de todo el proyecto.</p>
+          <p>Los resultados permiten demostrar la utilidad del análisis multidimensional para reconocer patrones y orientar el monitoreo. Sin embargo, corresponden a datos simulados y a estimaciones de un montaje académico; por ello, no representan mediciones oficiales ni permiten establecer cumplimiento normativo. Una implementación real requeriría sensores adecuados, calibración y validación bajo condiciones controladas.</p>
+        </div>
+      </div>
+      <div class="references-box">
+        <b>Referencias y documentación técnica</b>
+        <p>Agregar las fuentes bibliográficas efectivamente consultadas sobre contaminación acústica, medición de sonido, metodología CRISP-DM, SQL Server, SSIS y Power BI.</p>
+        <p>Agregar manuales, fichas técnicas y documentación de los componentes utilizados en la maqueta, especialmente el ESP32 y el sensor de sonido.</p>
+      </div>
     </section>
   </main>
 
